@@ -2,7 +2,7 @@ options( digits = 16 );
 library( jsonlite );
 
 mu = 0
-s = 1
+s = 1.5
 probs = 0:24 / 25
 y = qlogis( probs, mu, s )
 

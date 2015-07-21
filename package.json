@@ -29,7 +29,9 @@
     "statistics",
     "stats",
     "cdf",
-    "inverse"
+    "inverse",
+    "location-scale",
+    "logistic function"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/logistic-quantile/issues"

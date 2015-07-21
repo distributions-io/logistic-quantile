@@ -2,9 +2,9 @@ options( digits = 16 );
 library( jsonlite );
 
 
-mu = 0
+mu = 2
 s = 1
-probs = seq( 0, 1, 0.1 )
+probs = seq( 0, 1, 0.01 )
 y = qlogis( probs, mu, s )
 
 cat( y, sep = ",\n" )

@@ -3,8 +3,8 @@ library( jsonlite );
 
 
 mu = 0
-s = 1
-probs = seq( 0, 1, 0.1 )
+s = 3
+probs = seq( 0, 1, 0.01 )
 y = qlogis( probs, mu, s )
 
 cat( y, sep = ",\n" )
