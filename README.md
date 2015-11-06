@@ -1,17 +1,17 @@
 Quantile Function
 ===
-[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
+[![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][codecov-image]][codecov-url] [![Dependencies][dependencies-image]][dependencies-url]
 
 > [Logistic](https://en.wikipedia.org/wiki/Logistic_distribution) distribution [quantile function](https://en.wikipedia.org/wiki/Quantile_function).
 
-The [quantile function](https://en.wikipedia.org/wiki/Quantile_function) for a [Logistic](https://en.wikipedia.org/wiki/Logistic_distribution) random variable is
+The [quantile function](https://en.wikipedia.org/wiki/Quantile_function) for a [logistic](https://en.wikipedia.org/wiki/Logistic_distribution) random variable is
 
 <div class="equation" align="center" data-raw-text="" data-equation="eq:quantile_function">
-	<img src="https://cdn.rawgit.com/distributions-io/logistic-quantile/9c841bae78d3dc6a3f2ac520c6565298cda75874/docs/img/eqn.svg" alt="Quantile function for a Logistic distribution.">
+	<img src="https://cdn.rawgit.com/distributions-io/logistic-quantile/9c841bae78d3dc6a3f2ac520c6565298cda75874/docs/img/eqn.svg" alt="Quantile function for a logistic distribution.">
 	<br>
 </div>
 
-for `0 <= p < 1`, where `mu` is the location parameter and `s` is the scale parameter.
+for `0 <= p < 1`, where `mu` is the location parameter and `s > 0` is the scale parameter.
 
 ## Installation
 
@@ -79,7 +79,7 @@ The function accepts the following `options`:
 *	__path__: [deepget](https://github.com/kgryte/utils-deep-get)/[deepset](https://github.com/kgryte/utils-deep-set) key path.
 *	__sep__: [deepget](https://github.com/kgryte/utils-deep-get)/[deepset](https://github.com/kgryte/utils-deep-set) key path separator. Default: `'.'`.
 
-A [Logistic](https://en.wikipedia.org/wiki/Logistic_distribution) distribution is a function of 2 parameter(s): `mu`(location parameter) and `s`(scale parameter). By default, `mu` is equal to `0` and `s` is equal to `1`. To adjust either parameter, set the corresponding option(s).
+A [logistic](https://en.wikipedia.org/wiki/Logistic_distribution) distribution is a function of 2 parameters: `mu`(location parameter) and `s > 0`(scale parameter). By default, `mu` is equal to `0` and `s` is equal to `1`. To adjust either parameter, set the corresponding option.
 
 ``` javascript
 var x = [ 0, 0.2, 0.4, 0.6, 0.8, 1 ];
@@ -393,8 +393,8 @@ Copyright &copy; 2015. The [Compute.io](https://github.com/compute-io) Authors.
 [travis-image]: http://img.shields.io/travis/distributions-io/logistic-quantile/master.svg
 [travis-url]: https://travis-ci.org/distributions-io/logistic-quantile
 
-[coveralls-image]: https://img.shields.io/coveralls/distributions-io/logistic-quantile/master.svg
-[coveralls-url]: https://coveralls.io/r/distributions-io/logistic-quantile?branch=master
+[codecov-image]: https://img.shields.io/codecov/c/github/distributions-io/logistic-quantile/master.svg
+[codecov-url]: https://codecov.io/github/distributions-io/logistic-quantile?branch=master
 
 [dependencies-image]: http://img.shields.io/david/distributions-io/logistic-quantile.svg
 [dependencies-url]: https://david-dm.org/distributions-io/logistic-quantile
